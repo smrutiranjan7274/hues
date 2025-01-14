@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.gradient-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #182033, #000000, #532518);
+  opacity: 0.6;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.social-links {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #cccc;
+}
+
+@media (min-width: 640px) {
+  .newsletter form {
+    flex-direction: row;
+  }
+
+  .newsletter button {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .service-tag {
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
